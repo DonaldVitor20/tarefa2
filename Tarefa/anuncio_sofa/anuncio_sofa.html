@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="box1">
+        <!-- Adicionando um link em torno da imagem -->
+        <a href="#" id="linkImagem">
+            <img src="./midia_sofa/image.png" alt="imagem sofá" width="449px">
+        </a>
+        <img src="./midia_sofa/Vector.png" alt="img360graus" style="position: relative; left: 390px; top: 10px;" id="botaoTrocarImagem">
+    </div>
+
+    <div class="box2">
+        <br>
+        <br>
+        <main style="position:relative; left: 50px;">
+            <p style="display: inline; font-size: 65%;">CÓDIGO 42404 <br></p>
+            <h1 style="display: inline;">Sofá Margot II - Rosé </h1>
+            <p style="display: inline;"><br>R$:4.0000</p>
+            <br>
+            <br>
+            <div class="botao">
+                <p>ADICIONAR A CESTA</p>
+            </div>
+        </main>
+    </div>
+</div>
+
+<script>
+    // Capturando o botão de trocar imagem e a imagem atual
+    var botaoTrocarImagem = document.getElementById('botaoTrocarImagem');
+    var imagem = document.querySelector('.box1 img');
+
+    // Adicionando um ouvinte de evento de clique ao botão
+    botaoTrocarImagem.addEventListener('click', function() {
+        // Mudando o atributo src da imagem para a nova imagem
+        imagem.src = './midia_sofa/sofagif.gif';
+    });
+</script>
+
+</body>
+</html>
